@@ -1,0 +1,55 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:#070711;color:#fff;font-family:Poppins,sans-serif;overflow-x:hidden}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:70px 20px;position:relative}
+.hidden{display:none!important}.fade{animation:fade 1.5s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:-2;background-image:radial-gradient(circle,rgba(255,255,255,.75) 1px,transparent 1px);background-size:90px 90px;opacity:.2;animation:stars 25s linear infinite}
+@keyframes stars{to{transform:translateY(90px)}}
+.small{text-transform:uppercase;letter-spacing:4px;font-size:11px;color:#aaa}
+.btn{border:0;border-radius:999px;padding:14px 25px;color:#fff;background:linear-gradient(135deg,#ff4f91,#9b5de5);cursor:pointer;font:500 14px Poppins;box-shadow:0 12px 35px rgba(255,79,145,.24);transition:.3s}
+.btn:hover{transform:translateY(-3px) scale(1.02)}
+/* lock */
+#lock{background:radial-gradient(circle,rgba(255,90,150,.16),transparent 40%),#070711;text-align:center}
+.lockbox{width:min(430px,92vw);padding:42px 26px;border:1px solid rgba(255,255,255,.14);border-radius:28px;background:rgba(255,255,255,.045);backdrop-filter:blur(15px);box-shadow:0 0 70px rgba(255,80,150,.12)}
+.lockbox h1{font:500 66px "Great Vibes",cursive;margin:10px 0 12px}
+.lockbox p{color:#aaa;line-height:1.8;margin-bottom:28px}
+#code{width:100%;padding:15px;border-radius:14px;border:1px solid rgba(255,255,255,.18);background:rgba(0,0,0,.3);color:#fff;text-align:center;font-size:20px;letter-spacing:8px;outline:none}
+#error{min-height:22px;color:#ff78aa;font-size:12px;margin-top:13px}
+/* hero */
+#hero{text-align:center;background:radial-gradient(circle,rgba(255,80,150,.13),transparent 38%)}
+.hero h1{font:500 clamp(70px,16vw,150px)/.8 "Great Vibes",cursive;margin:25px 0}
+.hero h1 span,.birthday-name,.final h1 span{background:linear-gradient(90deg,#ff8bb9,#fff,#c084fc);-webkit-background-clip:text;color:transparent}
+.hero p{color:#bbb;line-height:1.9}.scroll{margin-top:65px;color:#777;font-size:11px;animation:bounce 2s infinite}
+@keyframes bounce{50%{transform:translateY(8px)}}
+/* common */
+.title{font:600 clamp(44px,8vw,76px)/1.05 "Cormorant Garamond",serif;margin:14px 0 18px}
+.sub{color:#aaa;margin-bottom:45px}
+/* countdown */
+#count{text-align:center}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;width:min(650px,100%)}
+.time{padding:25px 10px;border:1px solid rgba(255,255,255,.1);border-radius:20px;background:rgba(255,255,255,.045)}
+.time strong{display:block;font-size:clamp(30px,7vw,55px);font-weight:400}.time span{font-size:10px;letter-spacing:2px;color:#888}
+/* message */
+.center{text-align:center;max-width:780px}.center p{color:#ccc;line-height:2;font-size:16px}
+/* memories */
+.memories{width:min(1050px,100%)}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:38px;margin-top:45px}
+.polaroid{background:#f8f5f0;color:#222;padding:12px 12px 25px;box-shadow:0 20px 50px rgba(0,0,0,.45);transition:.4s}.polaroid:nth-child(odd){transform:rotate(-2deg)}.polaroid:nth-child(even){transform:rotate(2deg)}.polaroid:hover{transform:translateY(-10px) rotate(0) scale(1.02)}
+.polaroid img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}.caption{text-align:center;font:500 23px "Playfair Display",serif;margin-top:15px}
+/* letter */
+.letter{width:min(800px,100%);padding:44px 35px;border:1px solid rgba(255,255,255,.12);border-radius:26px;background:rgba(255,255,255,.045);backdrop-filter:blur(12px)}
+.letter h2{font:600 43px "Playfair Display",serif;margin:12px 0 30px}.letter p{font:400 16px/2 "Playfair Display",serif;color:#d0d0d0;margin-bottom:19px}
+/* birthday */
+#birthday{text-align:center;background:radial-gradient(circle,rgba(255,75,145,.2),transparent 42%)}
+.cake{font-size:90px;margin:25px 0;animation:float 2s ease-in-out infinite}@keyframes float{50%{transform:translateY(-12px)}}
+.birthday-name{font:500 clamp(80px,18vw,170px) "Great Vibes",cursive}
+#birthday .title{margin-top:5px}
+/* final */
+#final{text-align:center;background:radial-gradient(circle,rgba(255,70,140,.16),transparent 42%)}
+.final h1{font:500 clamp(70px,13vw,130px) "Great Vibes",cursive;margin-top:30px}.signature{margin-top:22px;font:500 30px "Playfair Display",serif;color:#aaa}
+.heart{position:fixed;top:-30px;z-index:50;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:0}}
+@media(max-width:650px){section{padding:55px 16px}.countdown{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr;gap:30px}.letter{padding:30px 22px}.letter h2{font-size:34px}.letter p,.center p{font-size:15px;line-height:1.85}}
+
+.grid.single-photo{grid-template-columns:minmax(260px,560px);justify-content:center}
+

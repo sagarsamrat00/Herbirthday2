@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Babe ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars"></div>
+
+<section id="lock">
+  <div class="lockbox">
+    <div class="small">A little secret</div>
+    <h1>Hey Riyu…</h1>
+    <p>This little surprise is only for you.<br>Enter the secret code.</p>
+    <input id="code" type="password" maxlength="4" placeholder="••••" inputmode="numeric">
+    <button class="btn" onclick="unlock()">Enter My Little World ❤️</button>
+    <div id="error"></div>
+  </div>
+</section>
+
+<main id="main" class="hidden">
+<section id="hero">
+  <div>
+    <div class="small">A little something I made for you</div>
+    <h1>Hey<br><span>Babe.</span></h1>
+    <p>Before you continue…<br>promise me you'll stay till the end. 🫣</p>
+    <div class="scroll">↓ There's something waiting for you ↓</div>
+  </div>
+</section>
+
+<section id="count">
+  <div class="center">
+    <div class="small">A little countdown</div>
+    <h2 class="title">Something special is coming…</h2>
+    <p class="sub">Until your special day ✨</p>
+    <div class="countdown">
+      <div class="time"><strong id="d">00</strong><span>DAYS</span></div>
+      <div class="time"><strong id="h">00</strong><span>HOURS</span></div>
+      <div class="time"><strong id="m">00</strong><span>MINUTES</span></div>
+      <div class="time"><strong id="s">00</strong><span>SECONDS</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="center">
+    <div class="small">Something I want you to know</div>
+    <h2 class="title">You are my favourite one.</h2>
+    <p>Maybe I don't always say everything I feel, but you have become such a beautiful part of my world that sometimes I don't even know how to explain what you mean to me. Through our silly fights, stubborn moments, and little misunderstandings, my heart keeps choosing you. ❤️</p>
+  </div>
+</section>
+
+
+
+<section>
+  <div class="letter">
+    <div class="small">A few words from my heart</div>
+    <h2>Happy Birthday, Babe ❤️</h2>
+    <div class="single-photo" style="max-width:420px;margin:22px auto 28px;text-align:center">
+      <img src="images/riyu4.jpg" alt="A special memory" style="width:100%;max-height:480px;object-fit:cover;border-radius:8px;box-shadow:0 12px 35px rgba(0,0,0,.12)">
+      <div class="caption">My favourite one. ✨</div>
+    </div>
+    <p>Happy Birthday to my favourite person. ❤️ Today isn't just another birthday; it's a reminder of how lucky I feel to have you in my life. You have become such a beautiful part of my world that sometimes I don't even know how to explain what you mean to me. We've had our silly fights, arguments, stubborn moments, and countless little misunderstandings, but somehow, through all of them, my heart keeps choosing you.</p>
+    <p>I love the way you care, the way you get angry, the way you smile, and even the way you can be impossibly stubborn sometimes. 😂 You may not always realize it, but you mean far more to me than I know how to put into words. I wish this new year of your life gives you every happiness you deserve, protects your beautiful smile, and brings you closer to all the dreams you carry in your heart.</p>
+    <p>And if I could make one wish for myself today, it would simply be to keep making memories with you—through the good days, the bad days, the laughter, the arguments, and everything in between. Because having you in my life is something I never want to take for granted.</p>
+    <p>Happy Birthday, my favourite one. 🎂❤️ You are more special to me than you'll ever know. 🫶</p>
+  </div>
+</section>
+
+<section id="birthday">
+  <div>
+    <div class="small">04 • 11</div>
+    <div class="cake">🎂</div>
+    <div class="birthday-name">Babe</div>
+    <h2 class="title">Happy Birthday ❤️</h2>
+    <p class="sub">Another beautiful year of you… ✨</p>
+  </div>
+</section>
+
+<section id="final">
+  <div>
+    <div class="small">Before you leave…</div>
+    <h2 class="title">One Last Thing…</h2>
+    <button id="lastBtn" class="btn" onclick="reveal()">Open It ❤️</button>
+    <div id="secret" class="hidden fade">
+      <h1 class="final">I love you. <span>❤️</span></h1>
+      <div class="signature">— Babes</div>
+    </div>
+  </div>
+</section>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
